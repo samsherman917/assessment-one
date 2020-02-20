@@ -1,0 +1,41 @@
+body{
+	background-image: url('../images/background.jpeg');
+	text-align: center;
+}
+
+h1{
+	text-transform: lowercase;
+}
+
+#mystuff{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+div{
+   padding: 25px; 
+   margin:5px; 
+   /* YOUR CODE HERE */
+}
+
+img{
+   width: 125px; 
+   margin-bottom: 10px; 
+   /*Your code here*/
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+@media screen and (min-width: 800px){
+
+#mystuff{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+div:nth-child(odd) {
+  border: 2px solid black;
+}
+
+
